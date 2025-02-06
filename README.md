@@ -1,84 +1,81 @@
-# Turborepo starter
+# Coin Degen - Crypto Portfolio & News Tracker
 
-This Turborepo starter is maintained by the Turborepo core team.
+A modern cryptocurrency tracking platform built with Turborepo and Bun, featuring web, mobile, and API services.
 
-## Using this example
+## Overview
 
-Run the following command:
+Coin Degen helps you track your crypto portfolios, monitor market trends, and stay updated with the latest crypto news. Built using modern technologies and real-time data from CoinGecko.
+
+## Tech Stack
+
+- **Runtime:** Bun
+- **Monorepo:** Turborepo
+- **Data Source:** CoinGecko API
+- **Apps:**
+  - `web`: Next.js web application
+  - `mobile`: React Native Expo mobile app
+  - `api`: Elysia.js backend service
+
+## Features
+
+- 📊 Real-time cryptocurrency price tracking
+- 💼 Multiple portfolio management
+- 📱 Cross-platform support (Web & Mobile)
+- 📰 Crypto news aggregation
+- 📈 Market analysis tools
+- 🔄 Real-time data synchronization
+
+## Getting Started
+
+1. Install dependencies:
+```sh
+bun install
+```
+
+2. Start development servers:
+```sh
+bun dev
+```
+
+## Project Structure
+
+```
+apps/
+  ├── web/          # Next.js web application
+  ├── mobile/       # React Native mobile app
+  ├── api/          # Elysia.js backend service
+```
+
+## Development
+
+Each app can be developed independently:
+
+- Web App: `bun dev --filter web`
+- Mobile App: `bun dev --filter mobile`
+- API Server: `bun dev --filter api`
+
+## Building
+
+Build all applications:
 
 ```sh
-npx create-turbo@latest
+bun run build
 ```
 
-## What's inside?
+## Contributing
 
-This Turborepo includes the following packages/apps:
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-### Apps and Packages
+## License
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+MIT
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Acknowledgments
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- Built with [Turborepo](https://turbo.build)
+- Powered by [Bun](https://bun.sh)
+- Market data by [CoinGecko](https://www.coingecko.com)

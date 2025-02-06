@@ -12,9 +12,9 @@ Coin Degen helps you track your crypto portfolios, monitor market trends, and st
 - **Monorepo:** Turborepo
 - **Data Source:** CoinGecko API
 - **Apps:**
-  - `web`: Next.js web application
-  - `mobile`: React Native Expo mobile app
-  - `api`: Elysia.js backend service
+  - `web`: Next.js
+  - `mobile`: React Native Expo
+  - `api`: Elysia.js
 
 ## Features
 
